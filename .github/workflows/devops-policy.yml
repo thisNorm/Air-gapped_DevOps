@@ -74,7 +74,7 @@ jobs:
               echo "Use one of:"
               echo "- DevOps/<work-item>"
               echo "- AI/<work-item>"
-echo "- feature/<work-item>"
+              echo "- feature/<work-item>"
               exit 1
               ;;
           esac
