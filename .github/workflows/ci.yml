@@ -120,7 +120,7 @@ jobs:
 
       - name: Build validator image
         run: |
-          docker build -f DevOps/docker/Dockerfile.validator -t air-gapped-devops-validator:${{ github.sha }} DevOps
+          docker build -f DevOps/docker/Dockerfile.validator -t air-gapped-devops-validator:${{ github.sha }} .
 
       - name: Run validator image
         run: |
