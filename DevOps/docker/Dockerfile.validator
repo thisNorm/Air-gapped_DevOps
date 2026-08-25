@@ -6,11 +6,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /workspace
 
-COPY requirements.txt .
+COPY DevOps/requirements.txt .
 
 RUN python -m pip install --upgrade pip \
     && pip install -r requirements.txt
 
-COPY . .
+COPY DevOps/ .
+COPY scripts/ /scripts/
 
 CMD ["pytest", "tests/", "-v"]
